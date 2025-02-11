@@ -1,4 +1,6 @@
 com.javarush.shmakov.quest
-Tomcat 9.0.98
+Tomcat- 10.0.20
 Corretto-21
 Jakarta EE 9.1
+Deploy artifact- quest:war
+Application context :"/" 

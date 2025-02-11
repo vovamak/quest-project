@@ -1,5 +1,6 @@
 package com.javarush.quest.controller;
 
+import com.javarush.quest.service.DetectorIP;
 import com.javarush.quest.service.Game;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -26,7 +27,7 @@ public class GameServlet extends HttpServlet {
         Game game = (Game) session.getAttribute("game");
 
         // Получаем IP-адрес пользователя
-        String ipAddress = req.getRemoteAddr();
+        String ipAddress = new DetectorIP(req).currentIP();
         session.setAttribute("ipAddress", ipAddress);
 
         // Инициализируем счетчик игр, если он еще не существует

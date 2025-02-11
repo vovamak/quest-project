@@ -17,7 +17,7 @@
   <div class="how-section1">
     <div class="row">
     <div class="col-md-2 how-img">
-      <img src="img/welcome.jpg" class="rounded-circle img-fluid" alt=""/>
+      <img src="src/main/webapp/WEB-INF/welcome.jpg" class="rounded-circle img-fluid" alt=""/>
     </div>
     <div class="col-md-6">
       <h4>Пролог</h4>
