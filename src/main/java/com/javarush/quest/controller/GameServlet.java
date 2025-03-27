@@ -57,12 +57,12 @@ public class GameServlet extends HttpServlet {
         boolean hasNextQuestion = game.answerQuestion(answerIndex);
 
         if (hasNextQuestion) {
-            resp.sendRedirect("/game");
+            resp.sendRedirect(req.getContextPath()+"/game");
         } else {
             // Увеличиваем счетчик игр после завершения игры
             Integer gamesPlayed = (Integer) session.getAttribute("gamesPlayed");
             session.setAttribute("gamesPlayed", gamesPlayed + 1);
-            resp.sendRedirect("/result");
+            resp.sendRedirect(req.getContextPath()+"/result");
         }
 
     }

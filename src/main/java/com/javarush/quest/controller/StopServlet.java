@@ -28,6 +28,6 @@ public class StopServlet extends HttpServlet {
         session.setAttribute("gamesPlayed", gamesPlayed + 1);
 
         // Перенаправляем на страницу результата
-        resp.sendRedirect("/result");
+        resp.sendRedirect(req.getContextPath() +"/result");
     }
 }

@@ -13,14 +13,14 @@
 </head>
 <body>
     <h1>${question.text}</h1>
-    <form action="/game" method="post">
+    <form action="${pageContext.request.contextPath}/game" method="post">
         <c:forEach items="${question.answers}" var="answer" varStatus="loop">
             <input type="radio" name="answer" value="${loop.index}" required> ${answer}<br>
         </c:forEach>
         <button type="submit">Ответить</button>
     </form>
 
-    <form action="/stop" method="post">
+    <form action="${pageContext.request.contextPath}/stop" method="post">
         <button type="submit">Остановить игру</button>
     </form>
     <div style="position: fixed; bottom: 10px; left: 10px; border: 1px solid black; padding: 5px;">

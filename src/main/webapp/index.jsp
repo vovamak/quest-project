@@ -62,7 +62,7 @@
 <section class="bg-dark text-center p-5 mt-4">
   <div class="container p-3">
     <h3 class="text-white">ДЛЯ НАЧАЛА ИГРЫ ПРЕДСТАВЬТЕСЬ</h3>
-    <form  action="/game" method="get"  >
+    <form  action="${pageContext.request.contextPath}/game" method="get"  >
       <input type="text" name="playerName" class="col-md-4" placeholder="Введите имя (допустимы только буквы)" required pattern="[A-Za-zА-Яа-яЁё]+"  >
 
       <button type="submit" class="btn btn-outline-secondary">Представиться<i class="fa fa-envelope"></i></button>

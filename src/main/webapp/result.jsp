@@ -21,7 +21,7 @@
     <p>${playerName}, ваш результат: ${score} из 5</p>
     <p>Ваш IP: ${ipAddress}</p>
     <p>Сыграно игр: ${gamesPlayed}</p>
-    <a href="/">Начать заново</a>
+    <a href="${pageContext.request.contextPath}/">Начать заново</a>
 
 
 </body>
